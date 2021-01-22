@@ -16,6 +16,7 @@ func main() {
 
 	eg := new(errgroup.Group)
 	for _, url := range urls {
+		url := url
 		eg.Go(func() error {
 			resp, err := http.Get(url)
 			if err != nil {
