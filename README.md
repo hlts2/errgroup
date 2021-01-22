@@ -52,7 +52,7 @@ func main() {
 
 	err := eg.Wait()
 	if err != nil {
-    // Perform type conversion and get all goroutine error.
+                // Perform type conversion and get all goroutine error.
 		if err, ok := err.(errgroup.Error); ok {
 			fmt.Println(err.Error())
 		}
