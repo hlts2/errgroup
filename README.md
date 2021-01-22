@@ -52,13 +52,13 @@ func main() {
 
 	err := eg.Wait()
 	if err != nil {
-                // Perform type conversion and get all goroutine error.
 		if err, ok := err.(errgroup.Error); ok {
 			fmt.Println(err.Error())
 		}
+	} else {
+		fmt.Println("Successfully fetched all URLs.")
 	}
 }
-
 
 ```
 
