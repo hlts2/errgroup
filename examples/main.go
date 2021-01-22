@@ -32,5 +32,7 @@ func main() {
 		if err, ok := err.(errgroup.Error); ok {
 			fmt.Println(err.Error())
 		}
+	} else {
+		fmt.Println("Successfully fetched all URLs.")
 	}
 }
