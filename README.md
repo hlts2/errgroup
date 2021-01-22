@@ -1,5 +1,8 @@
 # errgroup
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/hlts2/errgroup)](https://goreportcard.com/report/github.com/hlts2/errgroup)
+[![GoDoc](http://godoc.org/github.com/hlts2/errgroup?status.svg)](http://godoc.org/github.com/hlts2/errgroup)
+
 Provide synchronization, error propagation, and Context cancelation for groups of goroutines working on subtasks of a common task.
 This package highly inspired by [errgroup](https://github.com/golang/sync/tree/master/errgroup).
 
