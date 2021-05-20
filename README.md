@@ -54,7 +54,7 @@ func main() {
 	err := eg.Wait()
 	if err != nil {
 		if err, ok := err.(errgroup.Error); ok {
-			fmt.Println(err.Error())
+			fmt.Println(err.Errors()) // slice of errors that occurred inside eg.Go
 		}
 	} else {
 		fmt.Println("Successfully fetched all URLs.")
